@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="container">
+        <div id="input-container">
+            <input id="tittle" placeholder="tittle" type="text">
+            <input id="discription" placeholder="discription" type="text">
+            <button id="submit-btn">Add</button>
+
+        </div>
+        <div id="card-container">
+            <div draggable="true"  id="pending">
+                <h1 style="padding-left: 70px;">Pending</h1>
+                
+                
+            </div>
+            <div id="working">
+                <h1 style="padding-left: 70px;">Working</h1>
+            </div>
+            <div id="done">
+                <h1 style="padding-left: 90px;">Done</h1>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
