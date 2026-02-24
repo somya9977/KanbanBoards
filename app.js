@@ -12,7 +12,7 @@ let tasks = JSON.parse(localStorage.getItem("tasks")) || []
 submitBtn.addEventListener("click", () => {
 
 
-    if(tittle.value == "" && discription.value == "")
+    if(tittle.value == "" || discription.value == "")
     {
         alert("pls enter tittle and discription")
         return
