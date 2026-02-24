@@ -1,11 +1,11 @@
-🗂️ Kanban Board (Drag & Drop Task Manager)
+#  🗂️ Kanban Board (Drag & Drop Task Manager)
 
 A simple and responsive Kanban Board built using HTML, CSS, and JavaScript.
 Tasks can be added, dragged between columns, and are stored in localStorage so data persists after page refresh.
 
 Preview :- https://somya9977.github.io/KanbanBoards/
 
-🚀 Features
+#  🚀 Features
 
 ✅ Add new tasks with title and description
 
@@ -25,7 +25,7 @@ Done
 
 ✅ Clean and modern UI
 
-🛠️ Technologies Used
+#  🛠️ Technologies Used
 
 HTML5
 
@@ -37,7 +37,7 @@ LocalStorage API
 
 Drag and Drop API
 
-📂 Project Structure
+#   📂 Project Structure
 Kanban-Board/
 │
 ├── index.html
