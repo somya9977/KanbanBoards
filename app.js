@@ -70,6 +70,26 @@ submitBtn.addEventListener("click", () => {
 })
 
 
+pendingDiv.addEventListener("dragover", (e) => {
+    e.preventDefault()
+})
+
+pendingDiv.addEventListener("drop", (e) => {
+    e.preventDefault()
+
+    const data = e.dataTransfer.getData("id")
+    const draggedElement = document.getElementById(data)
+
+    pendingDiv.append(draggedElement)
+
+    const task = tasks.find(t => t.id == data)
+    if (task) {
+        task.status = "pending"
+        localStorage.setItem("tasks", JSON.stringify(tasks))
+    }
+})
+
+
 working.addEventListener("dragover", (e) => {
     e.preventDefault()
 })
