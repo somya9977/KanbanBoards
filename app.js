@@ -62,6 +62,11 @@ submitBtn.addEventListener("click", () => {
     e.dataTransfer.setData("id",  taskObj.id)
 })
 
+
+
+
+
+
 })
 
 
@@ -101,6 +106,8 @@ done.addEventListener("drop", (e) => {
         localStorage.setItem("tasks", JSON.stringify(tasks))
     }
 })
+
+
 
 
 window.addEventListener("load", () => {
