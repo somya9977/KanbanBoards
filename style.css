@@ -68,9 +68,17 @@ body {
     padding: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     transition: 0.3s;
-    overflow-y: auto;     /* 🔥 scroll enable */
+    overflow-y: auto;     
     overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     
+}
+
+#pending::-webkit-scrollbar,
+#working::-webkit-scrollbar,
+#done::-webkit-scrollbar {
+    display: none;
 }
 
 #pending:hover,
